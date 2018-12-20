@@ -8,8 +8,13 @@ I will be evaluating each library based on:
   Styles of components
 
 React UI Component Libraries to test:
-1. React Material-UI
-2. React Foundation
-3. React Bootstrap (Bootstrap 3: `react-bootstrap`)
-4. React Bootstrap (Bootstrap 4: `react-bootstrap@next`)
-5. React Toolbox?
+  1. React Material-UI
+  2. React Foundation
+  3. React Bootstrap (Bootstrap 3: `react-bootstrap`)
+  4. React Bootstrap (Bootstrap 4: `react-bootstrap@next`)
+  5. React Toolbox?
+
+Test
+  - Buttons
+  - Tabs
+  - Icons
