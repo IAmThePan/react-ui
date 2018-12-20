@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build": "yarn build.prod --watch",
+    "build": "yarn build.dev",
     "build.dev": "webpack --mode development",
     "build.prod": "webpack --mode production",
     "build.watch": "webpack --mode development --watch"
@@ -16,17 +16,21 @@
     "@babel/preset-react": "^7.0.0",
     "@material-ui/core": "^3.6.2",
     "babel-loader": "^8.0.4",
+    "bootstrap-3": "npm:bootstrap@3",
+    "bootstrap-4": "npm:bootstrap",
     "clean-webpack-plugin": "^1.0.0",
     "copy-webpack-plugin": "^4.6.0",
+    "css-loader": "^2.0.1",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
     "react": "^16.6.3",
     "react-bootstrap": "^0.32.4",
     "react-dom": "^16.6.3",
+    "reactstrap": "^6.5.0",
+    "style-loader": "^0.23.1",
+    "svg-loader": "^0.0.2",
+    "url-loader": "^1.1.2",
     "webpack": "^4.27.1",
     "webpack-cli": "^3.1.2"
-  },
-  "dependencies": {
-    "bootstrap": "3"
   }
 }
