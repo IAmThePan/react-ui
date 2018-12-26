@@ -18,17 +18,24 @@ const buildPlugins = [
   HTMLPlugin('material-ui-heavy'),
   HTMLPlugin('react-bootstrap'),
   HTMLPlugin('react-bootstrap-2'),
+  HTMLPlugin('react-bootstrap-next'),
+  HTMLPlugin('react-bootstrap-next-2'),
   HTMLPlugin('reactstrap'),
   HTMLPlugin('reactstrap-2'),
+  HTMLPlugin('react-foundation'),
   new CopyWebpackPlugin([
     {
       from: './node_modules/bootstrap-3/dist/css/bootstrap.min.css',
       to: './react-bootstrap/vendor/bootstrap.min.css',
     },
-      {
-        from: './node_modules/bootstrap-4/dist/css/bootstrap.min.css',
-        to: './reactstrap/vendor/bootstrap.min.css',
-      },
+    {
+      from: './node_modules/bootstrap-4/dist/css/bootstrap.min.css',
+      to: './react-bootstrap-next/vendor/bootstrap.min.css',
+    },
+    {
+      from: './node_modules/bootstrap-4/dist/css/bootstrap.min.css',
+      to: './reactstrap/vendor/bootstrap.min.css',
+    },
   ]),
 ];
 
@@ -39,8 +46,11 @@ const config = {
     'material-ui-heavy': './apps/material-ui-heavy/index.js',
     'react-bootstrap': './apps/react-bootstrap/index.js',
     'react-bootstrap-2': './apps/react-bootstrap-2/index.js',
+    'react-bootstrap-next': './apps/react-bootstrap-next/index.js',
+    'react-bootstrap-next-2': './apps/react-bootstrap-next-2/index.js',
     'reactstrap': './apps/reactstrap/index.js',
     'reactstrap-2': './apps/reactstrap-2/index.js',
+    'react-foundation': './apps/react-foundation/index.js',
   },
   output: {
     filename: '[name]/index.js',

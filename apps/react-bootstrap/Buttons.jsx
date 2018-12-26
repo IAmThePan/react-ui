@@ -34,6 +34,10 @@ class Buttons extends React.Component {
         <Row>
           <Col>
             <h3>Button Sizes</h3>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
             <ButtonToolbar>
               <Button bsSize="large">Large button</Button>
               <Button>Default button</Button>
@@ -45,6 +49,10 @@ class Buttons extends React.Component {
         <Row>
           <Col>
             <h3>Disabled</h3>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
             <ButtonToolbar>
               <Button>Default</Button>
               <Button disabled>Disabled</Button>
