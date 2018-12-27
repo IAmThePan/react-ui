@@ -59,11 +59,11 @@ class Buttons extends React.Component {
         </Row>
         <Row>
           <Col>
-            <ButtonToolbar>
+            <div>
               <Button size="lg">Large button</Button>
               <Button>Default button</Button>
               <Button size="sm">Small button</Button>
-            </ButtonToolbar>
+            </div>
           </Col>
         </Row>
         <Row>

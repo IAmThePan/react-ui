@@ -2,6 +2,7 @@ const path = require('path');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 function HTMLPlugin (name) {
   return new HtmlWebPackPlugin({
@@ -18,10 +19,16 @@ const buildPlugins = [
   HTMLPlugin('material-ui-heavy'),
   HTMLPlugin('react-bootstrap'),
   HTMLPlugin('react-bootstrap-2'),
+  HTMLPlugin('react-bootstrap-3'),
+  HTMLPlugin('react-bootstrap-4'),
   HTMLPlugin('react-bootstrap-next'),
   HTMLPlugin('react-bootstrap-next-2'),
+  HTMLPlugin('react-bootstrap-next-3'),
+  HTMLPlugin('react-bootstrap-next-4'),
   HTMLPlugin('reactstrap'),
   HTMLPlugin('reactstrap-2'),
+  HTMLPlugin('reactstrap-3'),
+  HTMLPlugin('reactstrap-4'),
   HTMLPlugin('react-foundation'),
   new CopyWebpackPlugin([
     {
@@ -37,6 +44,10 @@ const buildPlugins = [
       to: './reactstrap/vendor/bootstrap.min.css',
     },
   ]),
+  new MiniCssExtractPlugin({
+    filename: "[name]/styles.css",
+    chunkFilename: "[id].css"
+  })
 ];
 
 const config = {
@@ -46,10 +57,16 @@ const config = {
     'material-ui-heavy': './apps/material-ui-heavy/index.js',
     'react-bootstrap': './apps/react-bootstrap/index.js',
     'react-bootstrap-2': './apps/react-bootstrap-2/index.js',
+    'react-bootstrap-3': './apps/react-bootstrap-3/index.js',
+    'react-bootstrap-4': './apps/react-bootstrap-4/index.js',
     'react-bootstrap-next': './apps/react-bootstrap-next/index.js',
     'react-bootstrap-next-2': './apps/react-bootstrap-next-2/index.js',
+    'react-bootstrap-next-3': './apps/react-bootstrap-next-3/index.js',
+    'react-bootstrap-next-4': './apps/react-bootstrap-next-4/index.js',
     'reactstrap': './apps/reactstrap/index.js',
     'reactstrap-2': './apps/reactstrap-2/index.js',
+    'reactstrap-3': './apps/reactstrap-3/index.js',
+    'reactstrap-4': './apps/reactstrap-4/index.js',
     'react-foundation': './apps/react-foundation/index.js',
   },
   output: {
@@ -78,6 +95,120 @@ const config = {
         use: [
           'style-loader',
           'css-loader',
+        ],
+      },
+      {
+        test: /\.scss$/,
+        exclude: [
+          path.resolve(__dirname, 'apps/react-bootstrap-next-4'),
+          path.resolve(__dirname, 'apps/reactstrap-4'),
+        ],
+        use: [
+          {
+            loader: 'style-loader',
+          },
+          {
+            loader: 'css-loader',
+          },
+          {
+            loader: 'postcss-loader',
+            options: {
+              plugins: function () {
+                return [
+                  require('precss'),
+                  require('autoprefixer')
+                ];
+              },
+            },
+          },
+          {
+            loader: 'sass-loader',
+          },
+        ],
+      },
+      {
+        test: /\.less/,
+        exclude: [
+          path.resolve(__dirname, 'apps/react-bootstrap-4'),
+        ],
+        use: [
+          {
+            loader: 'style-loader',
+          },
+          {
+            loader: 'css-loader',
+          },
+          {
+            loader: 'postcss-loader',
+            options: {
+              plugins: function () {
+                return [
+                  require('precss'),
+                  require('autoprefixer')
+                ];
+              },
+            },
+          },
+          {
+            loader: 'less-loader',
+          },
+        ],
+      },
+      {
+        test: /\.scss$/,
+        include: [
+          path.resolve(__dirname, 'apps/react-bootstrap-next-4'),
+          path.resolve(__dirname, 'apps/reactstrap-4'),
+        ],
+        use: [
+          {
+            loader: MiniCssExtractPlugin.loader,
+          },
+          {
+            loader: 'css-loader',
+          },
+          {
+            loader: 'postcss-loader',
+            options: {
+              plugins: function () {
+                return [
+                  require('precss'),
+                  require('autoprefixer')
+                ];
+              },
+            },
+          },
+          {
+            loader: 'sass-loader',
+          },
+        ],
+      },
+      {
+        test: /\.less/,
+        include: [
+          path.resolve(__dirname, 'apps/react-bootstrap-4'),
+        ],
+        use: [
+          {
+            loader: MiniCssExtractPlugin.loader,
+          },
+          {
+            loader: 'css-loader',
+          },
+          {
+            loader: 'postcss-loader',
+            options: {
+              plugins: function () {
+                return [
+                  require('precss'),
+                  require('autoprefixer')
+                ];
+              },
+            },
+          },
+          {
+            loader: 'less-loader',
+          },
         ],
       },
       {
