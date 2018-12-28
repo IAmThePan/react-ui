@@ -8,7 +8,7 @@
 
 ### React UI Component Libraries to test:
 1. [x] React Material-UI using `material-ui`
-2. [ ] React Foundation 6 using `react-foundation`
+2. [x] React Foundation 6 using `react-foundation`
 3. [x] React Bootstrap 3 using `react-bootstrap`
 4. [x] React Bootstrap 4 using `react-bootstrap@next`
 5. [x] React Bootstrap 4 using `reactstrap`
@@ -45,7 +45,7 @@
 | - Selective bootstrap imported using SCSS compiled into file         |      1.2 MB    |        277 KB     |
 |                                                                      |                |                   |
 | Foundation 6 React App Compiled with Webpack (`react-foundation`)    |        -       |         -         |
-| - Entire foundation.min.css file imported in <link> tag              |      1.3 MB    |        379 KB     |
-| - Entire foundation.min.css file imported using Webpack              |      1.3 MB    |        385 KB     |
-| - Selective foundation imported using SCSS                           |      1.2 MB    |        284 KB     |
-| - Selective foundation imported using SCSS compiled into file        |      1.2 MB    |        277 KB     |
+| - Entire foundation.min.css file imported in <link> tag              |      1.0 MB    |        289 KB     |
+| - Entire foundation.min.css file imported using Webpack              |      1.0 MB    |        167 KB     |
+| - Selective foundation imported using SCSS                           |      927 KB    |        197 KB     |
+| - Selective foundation imported using SCSS compiled into file        |      908 KB    |        191 KB     |
