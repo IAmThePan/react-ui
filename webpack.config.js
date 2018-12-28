@@ -30,6 +30,9 @@ const buildPlugins = [
   HTMLPlugin('reactstrap-3'),
   HTMLPlugin('reactstrap-4'),
   HTMLPlugin('react-foundation'),
+  HTMLPlugin('react-foundation-2'),
+  HTMLPlugin('react-foundation-3'),
+  HTMLPlugin('react-foundation-4'),
   new CopyWebpackPlugin([
     {
       from: './node_modules/bootstrap-3/dist/css/bootstrap.min.css',
@@ -42,6 +45,10 @@ const buildPlugins = [
     {
       from: './node_modules/bootstrap-4/dist/css/bootstrap.min.css',
       to: './reactstrap/vendor/bootstrap.min.css',
+    },
+    {
+      from: './node_modules/foundation-sites/dist/css/foundation.min.css',
+      to: './react-foundation/vendor/foundation.min.css',
     },
   ]),
   new MiniCssExtractPlugin({
@@ -68,6 +75,9 @@ const config = {
     'reactstrap-3': './apps/reactstrap-3/index.js',
     'reactstrap-4': './apps/reactstrap-4/index.js',
     'react-foundation': './apps/react-foundation/index.js',
+    'react-foundation-2': './apps/react-foundation-2/index.js',
+    'react-foundation-3': './apps/react-foundation-3/index.js',
+    'react-foundation-4': './apps/react-foundation-4/index.js',
   },
   output: {
     filename: '[name]/index.js',
@@ -102,6 +112,7 @@ const config = {
         exclude: [
           path.resolve(__dirname, 'apps/react-bootstrap-next-4'),
           path.resolve(__dirname, 'apps/reactstrap-4'),
+          path.resolve(__dirname, 'apps/react-foundation-4'),
         ],
         use: [
           {
@@ -159,6 +170,7 @@ const config = {
         include: [
           path.resolve(__dirname, 'apps/react-bootstrap-next-4'),
           path.resolve(__dirname, 'apps/reactstrap-4'),
+          path.resolve(__dirname, 'apps/react-foundation-4'),
         ],
         use: [
           {

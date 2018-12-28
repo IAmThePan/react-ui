@@ -20,7 +20,7 @@ class App extends React.Component {
         <Row>
           <Col>
             <h1>React Bootstrap (Bootstrap Version 3)</h1>
-            <h6>Bootstrap SCSS compiled and imported using JavaScript</h6>
+            <h6>Bootstrap LESS compiled and imported using JavaScript</h6>
             <Tabs id="tabs">
               <Tab eventKey={1} title="Buttons">
                 <Buttons />

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './styles.scss';
 import {
   Row,
   Column,
@@ -32,6 +33,7 @@ class App extends React.Component {
         <Row>
           <Column>
             <h1>React Foundation (Foundation Version 6)</h1>
+            <h6>Foundation SCSS compiled and imported using JavaScript</h6>
           </Column>
         </Row>
         <Row>
