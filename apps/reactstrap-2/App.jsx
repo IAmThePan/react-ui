@@ -10,7 +10,6 @@ import {
   TabContent,
   TabPane,
 } from 'reactstrap';
-import classnames from 'classnames';
 import Buttons from './Buttons.jsx';
 
 class App extends React.Component {
@@ -38,7 +37,7 @@ class App extends React.Component {
             <Nav tabs>
               <NavItem>
                 <NavLink
-                  className={classnames({ active: activeTab === '1' })}
+                  className={activeTab === '1' ? "active" : ""}
                   onClick={() => { this._toggleTab('1'); }}
                   >
                   Buttons
@@ -46,7 +45,7 @@ class App extends React.Component {
               </NavItem>
               <NavItem>
                 <NavLink
-                  className={classnames({ active: activeTab === '2' })}
+                  className={activeTab === '2' ? "active" : ""}
                   onClick={() => { this._toggleTab('2'); }}
                   >
                   Icons
@@ -54,7 +53,7 @@ class App extends React.Component {
               </NavItem>
               <NavItem>
                 <NavLink
-                  className={classnames({ active: activeTab === '3' })}
+                  className={activeTab === '3' ? "active" : ""}
                   onClick={() => { this._toggleTab('3'); }}
                   >
                   Switches
