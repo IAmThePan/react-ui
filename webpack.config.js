@@ -39,6 +39,8 @@ const buildPlugins = [
   HTMLPlugin('material-components-web-react-2'),
   HTMLPlugin('material-components-web-react-3'),
   HTMLPlugin('material-components-web-react-4'),
+  HTMLPlugin('react-material-components-web'),
+  HTMLPlugin('react-material-components-web-2'),
   new CopyWebpackPlugin([
     {
       from: './node_modules/bootstrap-3/dist/css/bootstrap.min.css',
@@ -84,6 +86,10 @@ const buildPlugins = [
       from: './node_modules/@material/typography/dist/mdc.typography.min.css',
       to: './material-components-web-react/vendor/typography.min.css',
     },
+    {
+      from: './apps/react-material-components-web/material-components-web.min.css',
+      to: './react-material-components-web/vendor/material-components-web.min.css',
+    },
   ]),
   new MiniCssExtractPlugin({
     filename: "[name]/styles.css",
@@ -117,6 +123,8 @@ const config = {
     'material-components-web-react-2': './apps/material-components-web-react-2/index.js',
     'material-components-web-react-3': './apps/material-components-web-react-3/index.js',
     'material-components-web-react-4': './apps/material-components-web-react-4/index.js',
+    'react-material-components-web': './apps/react-material-components-web/index.js',
+    'react-material-components-web-2': './apps/react-material-components-web-2/index.js',
   },
   output: {
     filename: '[name]/index.js',

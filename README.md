@@ -13,7 +13,8 @@
 4. [x] React Foundation 6 using `react-foundation`
 5. [x] React Material-UI using `material-ui`
 6. [x] Material Components for React `material-components-web-react`
-7. [ ] React Material Components Web `react-material-components-web`
+7. [x] React Material Components Web `react-material-components-web`
+        - I don't like this package. The documentation was wrong and it had limited components (no tabs).
 8. [ ] RMWC
 9. [ ] PrimeReact
 10. [ ] react-dropzone (not a comprehensive UI framework, only handles uploading files via drag and drop)
@@ -75,10 +76,8 @@
 | - Selected Material UI imported SCSS compiled into file                       |      1.6 MB    |        454 KB     |
 |                                                                               |                |                   |
 | Material UI React App Compiled with Webpack ('react-material-web-components') |        -       |         -         |
-| - Selected Material UI imported CSS in <link> tag                             |      x.x MB    |        xxx KB     |
-| - Selected Material UI imported CSS using JavaScript                          |      x.x MB    |        xxx KB     |
-| - Selected Material UI imported SCSS using JavaScript                         |      x.x MB    |        xxx KB     |
-| - Selected Material UI imported SCSS compiled into file                       |      x.x MB    |        xxx KB     |
+| - Selected Material UI imported CSS in <link> tag                             |      2.0 MB    |        596 KB     |
+| - Selected Material UI imported CSS using JavaScript                          |      2.0 MB    |        602 KB     |
 |                                                                               |                |                   |
 | Material UI React App Compiled with Webpack (`rmwc`)                          |                |                   |
 |                                                                               |                |                   |
