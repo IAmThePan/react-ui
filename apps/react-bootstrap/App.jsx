@@ -28,7 +28,7 @@ class App extends React.Component {
                 <Icons />
               </Tab>
               <Tab eventKey={3} title="Switches">
-                Tab 3 Content
+                <div>I don't think there is a switch component in Bootstrap</div>
               </Tab>
             </Tabs>
           </Col>
