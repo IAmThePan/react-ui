@@ -5,7 +5,6 @@ import {
   Col,
   Button,
   ButtonToolbar,
-  Glyphicon,
 } from 'react-bootstrap';
 
 class Icons extends React.Component {
