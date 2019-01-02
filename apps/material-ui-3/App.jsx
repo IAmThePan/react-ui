@@ -51,7 +51,8 @@ class App extends React.Component {
 
     return (
       <div className={classes.root}>
-        <h1>React Material-UI</h1>
+        <h1>React Material-UI 3</h1>
+        <h6>Material-UI with Buttons, Tabs, Icons, and Custom Styles</h6>
         <AppBar className={classes.appBar} position="static">
           <Toolbar>
             <IconButton className={classes.menuButton} color="inherit">

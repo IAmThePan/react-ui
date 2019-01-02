@@ -26,7 +26,8 @@ class App extends React.Component {
 
     return (
       <div>
-        <h1>React Material-UI Heavy</h1>
+        <h1>React Material-UI 2</h1>
+        <h6>Material-UI with Custom Button Styles</h6>
         <Tabs
           value={value}
           onChange={this._handleChange}

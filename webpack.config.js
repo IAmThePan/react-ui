@@ -15,8 +15,6 @@ function HTMLPlugin (name) {
 const buildPlugins = [
   new CleanWebpackPlugin('./dist/*'),
   HTMLPlugin('baseline'),
-  HTMLPlugin('material-ui'),
-  HTMLPlugin('material-ui-heavy'),
   HTMLPlugin('react-bootstrap'),
   HTMLPlugin('react-bootstrap-2'),
   HTMLPlugin('react-bootstrap-3'),
@@ -33,6 +31,10 @@ const buildPlugins = [
   HTMLPlugin('react-foundation-2'),
   HTMLPlugin('react-foundation-3'),
   HTMLPlugin('react-foundation-4'),
+  HTMLPlugin('material-ui'),
+  HTMLPlugin('material-ui-2'),
+  HTMLPlugin('material-ui-3'),
+  // HTMLPlugin('material-components-web-react'),
   new CopyWebpackPlugin([
     {
       from: './node_modules/bootstrap-3/dist/css/bootstrap.min.css',
@@ -50,6 +52,10 @@ const buildPlugins = [
       from: './node_modules/foundation-sites/dist/css/foundation.min.css',
       to: './react-foundation/vendor/foundation.min.css',
     },
+    // {
+    //   from: './node_modules/material-components-web/dist/material-components-web.min.css',
+    //   to: './material-components-web/vendor/material-components-web.min.css',
+    // },
   ]),
   new MiniCssExtractPlugin({
     filename: "[name]/styles.css",
@@ -60,8 +66,6 @@ const buildPlugins = [
 const config = {
   entry: {
     'baseline': './apps/baseline/index.js',
-    'material-ui': './apps/material-ui/index.js',
-    'material-ui-heavy': './apps/material-ui-heavy/index.js',
     'react-bootstrap': './apps/react-bootstrap/index.js',
     'react-bootstrap-2': './apps/react-bootstrap-2/index.js',
     'react-bootstrap-3': './apps/react-bootstrap-3/index.js',
@@ -78,6 +82,10 @@ const config = {
     'react-foundation-2': './apps/react-foundation-2/index.js',
     'react-foundation-3': './apps/react-foundation-3/index.js',
     'react-foundation-4': './apps/react-foundation-4/index.js',
+    'material-ui': './apps/material-ui/index.js',
+    'material-ui-2': './apps/material-ui-2/index.js',
+    'material-ui-3': './apps/material-ui-3/index.js',
+    // 'material-components-web-react': './apps/material-components-web-react/index.js',
   },
   output: {
     filename: '[name]/index.js',
