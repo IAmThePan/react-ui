@@ -11,6 +11,7 @@ import {
 } from 'react-foundation';
 import Buttons from './Buttons.jsx';
 import Icons from './Icons.jsx';
+import Switches from './Switches.jsx';
 
 class App extends React.Component {
   state = {
@@ -60,7 +61,7 @@ class App extends React.Component {
             </Tabs>
             {activeTab === '1' && (<Buttons />)}
             {activeTab === '2' && (<Icons />)}
-            {activeTab === '3' && (<div>Tab 3 Content</div>)}
+            {activeTab === '3' && (<Switches />)}
           </Column>
         </Row>
       </div>
