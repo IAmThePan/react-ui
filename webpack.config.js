@@ -41,6 +41,10 @@ const buildPlugins = [
   HTMLPlugin('material-components-web-react-4'),
   HTMLPlugin('react-material-components-web'),
   HTMLPlugin('react-material-components-web-2'),
+  HTMLPlugin('rmwc'),
+  HTMLPlugin('rmwc-2'),
+  HTMLPlugin('rmwc-3'),
+  HTMLPlugin('rmwc-4'),
   new CopyWebpackPlugin([
     {
       from: './node_modules/bootstrap-3/dist/css/bootstrap.min.css',
@@ -87,8 +91,12 @@ const buildPlugins = [
       to: './material-components-web-react/vendor/typography.min.css',
     },
     {
-      from: './apps/react-material-components-web/material-components-web.min.css',
+      from: './node_modules/material-components-web/dist/material-components-web.min.css',
       to: './react-material-components-web/vendor/material-components-web.min.css',
+    },
+    {
+      from: './node_modules/material-components-web/dist/material-components-web.min.css',
+      to: './rmwc/vendor/material-components-web.min.css',
     },
   ]),
   new MiniCssExtractPlugin({
@@ -125,6 +133,10 @@ const config = {
     'material-components-web-react-4': './apps/material-components-web-react-4/index.js',
     'react-material-components-web': './apps/react-material-components-web/index.js',
     'react-material-components-web-2': './apps/react-material-components-web-2/index.js',
+    'rmwc': './apps/rmwc/index.js',
+    'rmwc-2': './apps/rmwc-2/index.js',
+    'rmwc-3': './apps/rmwc-3/index.js',
+    'rmwc-4': './apps/rmwc-4/index.js',
   },
   output: {
     filename: '[name]/index.js',
@@ -161,6 +173,7 @@ const config = {
           path.resolve(__dirname, 'apps/reactstrap-4'),
           path.resolve(__dirname, 'apps/react-foundation-4'),
           path.resolve(__dirname, 'apps/material-components-web-react-4'),
+          path.resolve(__dirname, 'apps/rmwc-4'),
         ],
         use: [
           {
@@ -226,6 +239,7 @@ const config = {
           path.resolve(__dirname, 'apps/reactstrap-4'),
           path.resolve(__dirname, 'apps/react-foundation-4'),
           path.resolve(__dirname, 'apps/material-components-web-react-4'),
+          path.resolve(__dirname, 'apps/rmwc-4'),
         ],
         use: [
           {

@@ -14,8 +14,11 @@
 5. [x] React Material-UI using `material-ui`
 6. [x] Material Components for React `material-components-web-react`
 7. [x] React Material Components Web `react-material-components-web`
-        - I don't like this package. The documentation was wrong and it had limited components (no tabs).
-8. [ ] RMWC
+        - Don't use:
+        - The documentation was wrong in places.
+        - Limited Components (no Tabs).
+        - Giant package size.
+8. [x] RMWC
 9. [ ] PrimeReact
 10. [ ] react-dropzone (not a comprehensive UI framework, only handles uploading files via drag and drop)
 11. [ ] tcomb-form (not a comprehensive UI framework, only handles styling forms)
@@ -58,12 +61,6 @@
 | - Selective foundation imported using SCSS                                    |      927 KB    |        197 KB     |
 | - Selective foundation imported using SCSS compiled into file                 |      908 KB    |        191 KB     |
 |                                                                               |                |                   |
-| Foundation 6 React App Compiled with Webpack (`react-foundation`)             |        -       |         -         |
-| - Entire foundation.min.css file imported in <link> tag                       |      1.0 MB    |        289 KB     |
-| - Entire foundation.min.css file imported using Webpack                       |      1.0 MB    |        167 KB     |
-| - Selective foundation imported using SCSS                                    |      927 KB    |        197 KB     |
-| - Selective foundation imported using SCSS compiled into file                 |      908 KB    |        191 KB     |
-|                                                                               |                |                   |
 | Material UI React App Compiled with Webpack (`material-ui`)                   |        -       |         -         |
 | - Material UI Tabs and Buttons                                                |      2.4 MB    |        261 KB     |
 | - Material UI Tabs and Buttons with custom styles                             |      2.4 MB    |        275 KB     |
@@ -79,7 +76,9 @@
 | - Selected Material UI imported CSS in <link> tag                             |      2.0 MB    |        596 KB     |
 | - Selected Material UI imported CSS using JavaScript                          |      2.0 MB    |        602 KB     |
 |                                                                               |                |                   |
-| Material UI React App Compiled with Webpack (`rmwc`)                          |                |                   |
-|                                                                               |                |                   |
-|                                                                               |                |                   |
+| Material UI React App Compiled with Webpack (`rmwc`)                          |        -       |         -         |
+| - Material UI imported CSS in <link> tag                                      |      1.5 MB    |        547 KB     |
+| - Material UI imported CSS using JavaScript                                   |      1.5 MB    |        553 KB     |
+| - Selective Material UI imported SCSS using JavaScript                        |      1.3 MB    |        350 KB     |
+| - Selective Material UI Imported SCSS compiled into file                      |      1.3 MB    |        343 KB     |
 |                                                                               |                |                   |
