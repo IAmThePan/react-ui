@@ -7,6 +7,7 @@ import {
   Tabs,
 } from 'react-bootstrap-next';
 import Buttons from './Buttons.jsx';
+import Icons from './Icons.jsx';
 
 class App extends React.Component {
   state = {
@@ -24,7 +25,7 @@ class App extends React.Component {
                 <Buttons />
               </Tab>
               <Tab eventKey={2} title="Icons">
-                Tab 2 Content
+                <Icons />
               </Tab>
               <Tab eventKey={3} title="Switches">
                 Tab 3 Content
