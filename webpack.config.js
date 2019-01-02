@@ -1,4 +1,5 @@
 const path = require('path');
+const glob = require('glob');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
@@ -15,8 +16,6 @@ function HTMLPlugin (name) {
 const buildPlugins = [
   new CleanWebpackPlugin('./dist/*'),
   HTMLPlugin('baseline'),
-  HTMLPlugin('material-ui'),
-  HTMLPlugin('material-ui-heavy'),
   HTMLPlugin('react-bootstrap'),
   HTMLPlugin('react-bootstrap-2'),
   HTMLPlugin('react-bootstrap-3'),
@@ -33,6 +32,19 @@ const buildPlugins = [
   HTMLPlugin('react-foundation-2'),
   HTMLPlugin('react-foundation-3'),
   HTMLPlugin('react-foundation-4'),
+  HTMLPlugin('material-ui'),
+  HTMLPlugin('material-ui-2'),
+  HTMLPlugin('material-ui-3'),
+  HTMLPlugin('material-components-web-react'),
+  HTMLPlugin('material-components-web-react-2'),
+  HTMLPlugin('material-components-web-react-3'),
+  HTMLPlugin('material-components-web-react-4'),
+  HTMLPlugin('react-material-components-web'),
+  HTMLPlugin('react-material-components-web-2'),
+  HTMLPlugin('rmwc'),
+  HTMLPlugin('rmwc-2'),
+  HTMLPlugin('rmwc-3'),
+  HTMLPlugin('rmwc-4'),
   new CopyWebpackPlugin([
     {
       from: './node_modules/bootstrap-3/dist/css/bootstrap.min.css',
@@ -50,6 +62,42 @@ const buildPlugins = [
       from: './node_modules/foundation-sites/dist/css/foundation.min.css',
       to: './react-foundation/vendor/foundation.min.css',
     },
+    {
+      from: './node_modules/@material/react-layout-grid/dist/layout-grid.min.css',
+      to: './material-components-web-react/vendor/layout-grid.min.css',
+    },
+    {
+      from: './node_modules/@material/react-button/dist/button.min.css',
+      to: './material-components-web-react/vendor/button.min.css',
+    },
+    {
+      from: './node_modules/@material/react-tab-bar/dist/tab-bar.min.css',
+      to: './material-components-web-react/vendor/tab-bar.min.css',
+    },
+    {
+      from: './node_modules/@material/react-tab-scroller/dist/tab-scroller.min.css',
+      to: './material-components-web-react/vendor/tab-scroller.min.css',
+    },
+    {
+      from: './node_modules/@material/react-tab/dist/tab.min.css',
+      to: './material-components-web-react/vendor/tab.min.css',
+    },
+    {
+      from: './node_modules/@material/react-tab-indicator/dist/tab-indicator.min.css',
+      to: './material-components-web-react/vendor/tab-indicator.min.css',
+    },
+    {
+      from: './node_modules/@material/typography/dist/mdc.typography.min.css',
+      to: './material-components-web-react/vendor/typography.min.css',
+    },
+    {
+      from: './node_modules/material-components-web/dist/material-components-web.min.css',
+      to: './react-material-components-web/vendor/material-components-web.min.css',
+    },
+    {
+      from: './node_modules/material-components-web/dist/material-components-web.min.css',
+      to: './rmwc/vendor/material-components-web.min.css',
+    },
   ]),
   new MiniCssExtractPlugin({
     filename: "[name]/styles.css",
@@ -60,8 +108,6 @@ const buildPlugins = [
 const config = {
   entry: {
     'baseline': './apps/baseline/index.js',
-    'material-ui': './apps/material-ui/index.js',
-    'material-ui-heavy': './apps/material-ui-heavy/index.js',
     'react-bootstrap': './apps/react-bootstrap/index.js',
     'react-bootstrap-2': './apps/react-bootstrap-2/index.js',
     'react-bootstrap-3': './apps/react-bootstrap-3/index.js',
@@ -78,6 +124,19 @@ const config = {
     'react-foundation-2': './apps/react-foundation-2/index.js',
     'react-foundation-3': './apps/react-foundation-3/index.js',
     'react-foundation-4': './apps/react-foundation-4/index.js',
+    'material-ui': './apps/material-ui/index.js',
+    'material-ui-2': './apps/material-ui-2/index.js',
+    'material-ui-3': './apps/material-ui-3/index.js',
+    'material-components-web-react': './apps/material-components-web-react/index.js',
+    'material-components-web-react-2': './apps/material-components-web-react-2/index.js',
+    'material-components-web-react-3': './apps/material-components-web-react-3/index.js',
+    'material-components-web-react-4': './apps/material-components-web-react-4/index.js',
+    'react-material-components-web': './apps/react-material-components-web/index.js',
+    'react-material-components-web-2': './apps/react-material-components-web-2/index.js',
+    'rmwc': './apps/rmwc/index.js',
+    'rmwc-2': './apps/rmwc-2/index.js',
+    'rmwc-3': './apps/rmwc-3/index.js',
+    'rmwc-4': './apps/rmwc-4/index.js',
   },
   output: {
     filename: '[name]/index.js',
@@ -113,6 +172,8 @@ const config = {
           path.resolve(__dirname, 'apps/react-bootstrap-next-4'),
           path.resolve(__dirname, 'apps/reactstrap-4'),
           path.resolve(__dirname, 'apps/react-foundation-4'),
+          path.resolve(__dirname, 'apps/material-components-web-react-4'),
+          path.resolve(__dirname, 'apps/rmwc-4'),
         ],
         use: [
           {
@@ -134,6 +195,12 @@ const config = {
           },
           {
             loader: 'sass-loader',
+            options: {
+              includePaths: ['node_modules', 'node_modules/@material/*']
+              .map((d) => path.join(__dirname, d))
+              .map((g) => glob.sync(g))
+              .reduce((a, c) => a.concat(c), [])
+            },
           },
         ],
       },
@@ -171,6 +238,8 @@ const config = {
           path.resolve(__dirname, 'apps/react-bootstrap-next-4'),
           path.resolve(__dirname, 'apps/reactstrap-4'),
           path.resolve(__dirname, 'apps/react-foundation-4'),
+          path.resolve(__dirname, 'apps/material-components-web-react-4'),
+          path.resolve(__dirname, 'apps/rmwc-4'),
         ],
         use: [
           {
@@ -192,6 +261,12 @@ const config = {
           },
           {
             loader: 'sass-loader',
+            options: {
+              includePaths: ['node_modules', 'node_modules/@material/*']
+              .map((d) => path.join(__dirname, d))
+              .map((g) => glob.sync(g))
+              .reduce((a, c) => a.concat(c), [])
+            },
           },
         ],
       },

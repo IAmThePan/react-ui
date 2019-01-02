@@ -2,13 +2,14 @@ import React, { Component } from 'react';
 import {
   Tab,
   Tabs,
+  Typography,
 } from '@material-ui/core';
 import Buttons from './Buttons.jsx';
 
 const TabContainer = (props) => (
-  <div style={{ padding: 8 * 3 }}>
+  <Typography component="div" style={{ padding: 8 * 3 }}>
     {props.children}
-  </div>
+  </Typography>
 );
 
 class App extends React.Component {
