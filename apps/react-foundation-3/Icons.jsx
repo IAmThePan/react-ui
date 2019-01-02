@@ -34,10 +34,10 @@ class Icons extends React.Component {
               <i className="fas fa-power-off"></i> Default
             </Button>
             <Button color="secondary">
-              <i className="fas fa-list-alt"></i> Secondary
+              <i className="far fa-list-alt"></i> Secondary
             </Button>
             <Button color="success">
-              <i className="far fa-check"></i> Success
+              <i className="fas fa-check"></i> Success
             </Button>
             <Button color="alert">
               <i className="fas fa-ban"></i> Alert

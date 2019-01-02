@@ -11,6 +11,7 @@ import {
   TabPane,
 } from 'reactstrap';
 import Buttons from './Buttons.jsx';
+import Icons from './Icons.jsx';
 
 class App extends React.Component {
   state = {
@@ -65,7 +66,7 @@ class App extends React.Component {
                 <Buttons />
               </TabPane>
               <TabPane tabId="2">
-                <div>Tab 2 Content</div>
+                <Icons />
               </TabPane>
               <TabPane tabId="3">
                 <div>Tab 3 Content</div>
