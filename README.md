@@ -18,8 +18,8 @@
         - The documentation was wrong in places.
         - Limited Components (no Tabs).
         - Giant package size.
-8. [x] RMWC
-9. [ ] PrimeReact
+8. [x] RMWC `rmwc`
+9. [x] PrimeReact
 10. [ ] react-dropzone (not a comprehensive UI framework, only handles uploading files via drag and drop)
 11. [ ] tcomb-form (not a comprehensive UI framework, only handles styling forms)
 12. [ ] Mobiscroll
@@ -81,4 +81,8 @@
 | - Material UI imported CSS using JavaScript                                   |      1.5 MB    |        553 KB     |
 | - Selective Material UI imported SCSS using JavaScript                        |      1.3 MB    |        350 KB     |
 | - Selective Material UI Imported SCSS compiled into file                      |      1.3 MB    |        343 KB     |
+|                                                                               |                |                   |
+| Prime-React App Compiled with Webpack (`prime-react`)                         |        -       |         -         |
+| - Material UI and Themes imported CSS in <link> tag                           |      1.0 MB    |        547 KB     |
+| - Material UI and Themes imported CSS using JavaScript                        |      1.4 MB    |        553 KB     |
 |                                                                               |                |                   |

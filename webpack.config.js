@@ -45,6 +45,8 @@ const buildPlugins = [
   HTMLPlugin('rmwc-2'),
   HTMLPlugin('rmwc-3'),
   HTMLPlugin('rmwc-4'),
+  HTMLPlugin('prime-react'),
+  HTMLPlugin('prime-react-2'),
   new CopyWebpackPlugin([
     {
       from: './node_modules/bootstrap-3/dist/css/bootstrap.min.css',
@@ -102,6 +104,18 @@ const buildPlugins = [
       from: './node_modules/material-components-web/dist/material-components-web.min.css',
       to: './rmwc/vendor/material-components-web.min.css',
     },
+    {
+      from: './node_modules/primereact/resources/themes/nova-light/theme.css',
+      to: './prime-react/vendor/theme.css',
+    },
+    {
+      from: './node_modules/primereact/resources/primereact.min.css',
+      to: './prime-react/vendor/primereact.min.css',
+    },
+    {
+      from: './node_modules/primeflex/primeflex.css',
+      to: './prime-react/vendor/primeflex.css',
+    },
   ]),
   new MiniCssExtractPlugin({
     filename: "[name]/styles.css",
@@ -141,6 +155,8 @@ const config = {
     'rmwc-2': './apps/rmwc-2/index.js',
     'rmwc-3': './apps/rmwc-3/index.js',
     'rmwc-4': './apps/rmwc-4/index.js',
+    'prime-react': './apps/prime-react/index.js',
+    'prime-react-2': './apps/prime-react-2/index.js',
   },
   output: {
     filename: '[name]/index.js',
@@ -312,8 +328,17 @@ const config = {
         },
       },
       {
-        test: /\.svg$/,
-        loader: 'svg-loader?pngScale=2',
+        test: /\.(gif|png|jpe?g|svg)$/i,
+        use: [
+          'file-loader',
+          {
+            loader: 'image-webpack-loader',
+            options: {
+              bypassOnDebug: true, // webpack@1.x
+              disable: true, // webpack@2.x and newer
+            },
+          },
+        ],
       },
     ],
   },
