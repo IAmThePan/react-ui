@@ -83,6 +83,6 @@
 | - Selective Material UI Imported SCSS compiled into file                      |      1.3 MB    |        343 KB     |
 |                                                                               |                |                   |
 | Prime-React App Compiled with Webpack (`prime-react`)                         |        -       |         -         |
-| - Material UI and Themes imported CSS in <link> tag                           |      1.0 MB    |        547 KB     |
-| - Material UI and Themes imported CSS using JavaScript                        |      1.4 MB    |        553 KB     |
+| - Material UI and Themes imported CSS in <link> tag                           |      1.0 MB    |        340 KB     |
+| - Material UI and Themes imported CSS using JavaScript                        |      1.4 MB    |        654 KB     |
 |                                                                               |                |                   |
