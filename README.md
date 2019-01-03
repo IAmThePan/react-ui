@@ -35,31 +35,31 @@
 
 | Framework Name and details                                                    | Size (Develop) | Size (Production) |
 | :-------------------------                                                    | :------------- | :---------------- |
-| Baseline React App compiled with Webpack                                      |      737 KB    |        113 KB     |
+| Baseline React App compiled with Webpack                                      |      756 KB    |        114 KB     |
 |                                                                               |                |                   |
 | Bootstrap 3 React App Compiled with Webpack (`react-bootstrap`)               |        -       |         -         |
-| - Entire bootstrap.min.css file imported in <link> tag                        |      1.8 MB    |        287 KB     |
-| - Entire bootstrap.min.css file imported using Webpack                        |      2.1 MB    |        545 KB     |
-| - Selective bootstrap imported using LESS                                     |      1.8 MB    |        237 KB     |
-| - Selective bootstrap imported using LESS compiled into file                  |      1.8 MB    |        228 KB     |
+| - Entire bootstrap.min.css file imported in <link> tag                        |      1.8 MB    |        291 KB     |
+| - Entire bootstrap.min.css file imported using Webpack                        |      2.1 MB    |        549 KB     |
+| - Selective bootstrap imported using LESS                                     |      1.8 MB    |        241 KB     |
+| - Selective bootstrap imported using LESS compiled into file                  |      1.8 MB    |        232 KB     |
 |                                                                               |                |                   |
 | Bootstrap 4 React App Compiled with Webpack (`react-bootstrap@next`)          |        -       |         -         |
-| - Entire bootstrap.min.css file imported in <link> tag                        |      1.6 MB    |        296 KB     |
-| - Entire bootstrap.min.css file imported using Webpack                        |      1.7 MB    |        302 KB     |
-| - Selective bootstrap imported using SCSS                                     |      1.6 MB    |        201 KB     |
-| - Selective bootstrap imported using SCSS compiled into file                  |      1.5 MB    |        193 KB     |
+| - Entire bootstrap.min.css file imported in <link> tag                        |      2.5 MB    |        332 KB     |
+| - Entire bootstrap.min.css file imported using Webpack                        |      2.5 MB    |        338 KB     |
+| - Selective bootstrap imported using SCSS                                     |      2.4 MB    |        223 KB     |
+| - Selective bootstrap imported using SCSS compiled into file                  |      2.4 MB    |        216 KB     |
 |                                                                               |                |                   |
 | Bootstrap 4 React App Compiled with Webpack (`reactstrap`)                    |        -       |         -         |
-| - Entire bootstrap.min.css file imported in <link> tag                        |      1.3 MB    |        379 KB     |
-| - Entire bootstrap.min.css file imported using Webpack                        |      1.3 MB    |        385 KB     |
-| - Selective bootstrap imported using SCSS                                     |      1.2 MB    |        284 KB     |
-| - Selective bootstrap imported using SCSS compiled into file                  |      1.2 MB    |        277 KB     |
+| - Entire bootstrap.min.css file imported in <link> tag                        |      1.3 MB    |        395 KB     |
+| - Entire bootstrap.min.css file imported using Webpack                        |      1.3 MB    |        401 KB     |
+| - Selective bootstrap imported using SCSS                                     |      1.2 MB    |        287 KB     |
+| - Selective bootstrap imported using SCSS compiled into file                  |      1.2 MB    |        279 KB     |
 |                                                                               |                |                   |
 | Foundation 6 React App Compiled with Webpack (`react-foundation`)             |        -       |         -         |
-| - Entire foundation.min.css file imported in <link> tag                       |      1.0 MB    |        289 KB     |
-| - Entire foundation.min.css file imported using Webpack                       |      1.0 MB    |        167 KB     |
-| - Selective foundation imported using SCSS                                    |      927 KB    |        197 KB     |
-| - Selective foundation imported using SCSS compiled into file                 |      908 KB    |        191 KB     |
+| - Entire foundation.min.css file imported in <link> tag                       |      1.1 MB    |        393 KB     |
+| - Entire foundation.min.css file imported using Webpack                       |      1.2 MB    |        173 KB     |
+| - Selective foundation imported using SCSS                                    |      984 KB    |        228 KB     |
+| - Selective foundation imported using SCSS compiled into file                 |      964 KB    |        221 KB     |
 |                                                                               |                |                   |
 | Material UI React App Compiled with Webpack (`material-ui`)                   |        -       |         -         |
 | - Material UI Tabs and Buttons                                                |      2.4 MB    |        261 KB     |
@@ -73,7 +73,7 @@
 | - Selected Material UI imported SCSS compiled into file                       |      1.6 MB    |        454 KB     |
 |                                                                               |                |                   |
 | Material UI React App Compiled with Webpack ('react-material-web-components') |        -       |         -         |
-| - Selected Material UI imported CSS in <link> tag                             |      2.0 MB    |        596 KB     |
+| - Selected Material UI imported CSS in <link> tag                             |      2.0 MB    |        582 KB     |
 | - Selected Material UI imported CSS using JavaScript                          |      2.0 MB    |        602 KB     |
 |                                                                               |                |                   |
 | Material UI React App Compiled with Webpack (`rmwc`)                          |        -       |         -         |

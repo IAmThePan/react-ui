@@ -63,6 +63,10 @@ const buildPlugins = [
       to: './react-foundation/vendor/foundation.min.css',
     },
     {
+      from: './node_modules/foundation-sites/dist/css/foundation-float.min.css',
+      to: './react-foundation/vendor/foundation-float.min.css',
+    },
+    {
       from: './node_modules/@material/react-layout-grid/dist/layout-grid.min.css',
       to: './material-components-web-react/vendor/layout-grid.min.css',
     },
