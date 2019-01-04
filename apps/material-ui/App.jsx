@@ -5,6 +5,7 @@ import {
   Typography,
 } from '@material-ui/core';
 import Buttons from './Buttons.jsx';
+import Playground from './Playground.jsx';
 
 const TabContainer = (props) => (
   <Typography component="div" style={{ padding: 8 * 3 }}>
@@ -36,11 +37,11 @@ class App extends React.Component {
         >
           <Tab label="Buttons" />
           <Tab label="Icons" />
-          <Tab label="Switches" />
+          <Tab label="Loading Animations" />
         </Tabs>
         {value === 0 && <TabContainer><Buttons /></TabContainer>}
         {value === 1 && <TabContainer>Item Two</TabContainer>}
-        {value === 2 && <TabContainer>Item Three</TabContainer>}
+        {value === 2 && <TabContainer><Playground /></TabContainer>}
       </div>
     );
   }
