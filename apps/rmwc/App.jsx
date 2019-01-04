@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Grid, GridCell } from '@rmwc/grid';
 import { TabBar, Tab } from '@rmwc/tabs';
 import Buttons from './Buttons.jsx';
+import Playground from './Playground.jsx';
 
 class App extends React.Component {
   state = {
@@ -20,13 +21,13 @@ class App extends React.Component {
           <TabBar activeTabIndex={activeTab} onActivate={e => this.setState({activeTab: e.detail.index})}>
             <Tab>Buttons</Tab>
             <Tab>Icons</Tab>
-            <Tab>Switches</Tab>
+            <Tab>Loading Animations</Tab>
           </TabBar>
         </GridCell>
         <GridCell span="12">
           {activeTab === 0 && (<Buttons />)}
           {activeTab === 1 && (<div>Tab 2 Content</div>)}
-          {activeTab === 2 && (<div>Tab 3 Content</div>)}
+          {activeTab === 2 && (<div><Playground /></div>)}
         </GridCell>
       </Grid>
     );
