@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
-import {
-  Tab,
-  Tabs,
-  Typography,
-} from '@material-ui/core';
+import Tab from '@material-ui/core/Tab';
+import Tabs from '@material-ui/core/Tabs';
+import Typography from '@material-ui/core/Typography';
 import Buttons from './Buttons.jsx';
 
 const TabContainer = (props) => (

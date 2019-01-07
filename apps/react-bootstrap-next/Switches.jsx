@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
-import {
-  Container,
-  Row,
-  Col,
-} from 'react-bootstrap-next';
+import Container from 'react-bootstrap-next/lib/Container';
+import Row from 'react-bootstrap-next/lib/Row';
+import Col from 'react-bootstrap-next/lib/Col';
 
 class Switches extends React.Component {
   render() {

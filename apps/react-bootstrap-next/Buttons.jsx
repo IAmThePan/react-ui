@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
-import {
-  Container,
-  Row,
-  Col,
-  Button,
-  ButtonToolbar,
-} from 'react-bootstrap-next';
+import Container from 'react-bootstrap-next/lib/Container';
+import Row from 'react-bootstrap-next/lib/Row';
+import Col from 'react-bootstrap-next/lib/Col';
+import Button from 'react-bootstrap-next/lib/Button';
+import ButtonToolbar from 'react-bootstrap-next/lib/ButtonToolbar';
 
 class Buttons extends React.Component {
 

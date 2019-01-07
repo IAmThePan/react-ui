@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
 import './styles.scss';
-import {
-  Container,
-  Row,
-  Col,
-  Tab,
-  Tabs,
-} from 'react-bootstrap-next';
+import Container from 'react-bootstrap-next/lib/Container';
+import Row from 'react-bootstrap-next/lib/Row';
+import Col from 'react-bootstrap-next/lib/Col';
+import Tab from 'react-bootstrap-next/lib/Tab';
+import Tabs from 'react-bootstrap-next/lib/Tabs';
 import Buttons from './Buttons.jsx';
 import Icons from './Icons.jsx';
 

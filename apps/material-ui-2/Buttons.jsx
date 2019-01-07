@@ -1,13 +1,9 @@
 import React, { Component } from 'react';
-import {
-  createMuiTheme,
-  MuiThemeProvider,
-  withStyles,
-} from '@material-ui/core/styles';
-import {
-  green,
-  purple,
-} from '@material-ui/core/colors/';
+import createMuiTheme from '@material-ui/core/styles/createMuiTheme';
+import MuiThemeProvider from '@material-ui/core/styles/MuiThemeProvider';
+import withStyles from '@material-ui/core/styles/withStyles';
+import green from '@material-ui/core/colors/green';
+import purple from '@material-ui/core/colors/purple';
 import Button from '@material-ui/core/Button';
 
 const styles = theme => ({

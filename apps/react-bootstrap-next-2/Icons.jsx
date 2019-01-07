@@ -1,16 +1,14 @@
 import React, { Component } from 'react';
-import {
-  Grid,
-  Row,
-  Col,
-  Button,
-  ButtonToolbar,
-} from 'react-bootstrap';
+import Container from 'react-bootstrap-next/lib/Container';
+import Row from 'react-bootstrap-next/lib/Row';
+import Col from 'react-bootstrap-next/lib/Col';
+import Button from 'react-bootstrap-next/lib/Button';
+import ButtonToolbar from 'react-bootstrap-next/lib/ButtonToolbar';
 
 class Icons extends React.Component {
   render() {
     return (
-      <Grid>
+      <Container>
         <Row>
           <Col>
             <h3>Icons</h3>
@@ -52,7 +50,7 @@ class Icons extends React.Component {
             </ButtonToolbar>
           </Col>
         </Row>
-      </Grid>
+      </Container>
     );
   }
 };

@@ -23,7 +23,7 @@
 10. [ ] react-dropzone (not a comprehensive UI framework, only handles uploading files via drag and drop)
 11. [ ] tcomb-form (not a comprehensive UI framework, only handles styling forms)
 12. [ ] Mobiscroll
-13. [ ] React Toolbox?
+13. [x] React Toolbox?
 
 ### Test
 1. [x] Buttons
@@ -44,10 +44,10 @@
 | - Selective bootstrap imported using LESS compiled into file                  |      1.8 MB    |        232 KB     |
 |                                                                               |                |                   |
 | Bootstrap 4 React App Compiled with Webpack (`react-bootstrap@next`)          |        -       |         -         |
-| - Entire bootstrap.min.css file imported in <link> tag                        |      2.5 MB    |        332 KB     |
-| - Entire bootstrap.min.css file imported using Webpack                        |      2.5 MB    |        338 KB     |
-| - Selective bootstrap imported using SCSS                                     |      2.4 MB    |        223 KB     |
-| - Selective bootstrap imported using SCSS compiled into file                  |      2.4 MB    |        216 KB     |
+| - Entire bootstrap.min.css file imported in <link> tag                        |      1.1 MB    |        317 KB     |
+| - Entire bootstrap.min.css file imported using Webpack                        |      1.1 MB    |        323 KB     |
+| - Selective bootstrap imported using SCSS                                     |      1.0 MB    |        208 KB     |
+| - Selective bootstrap imported using SCSS compiled into file                  |      988 KB    |        201 KB     |
 |                                                                               |                |                   |
 | Bootstrap 4 React App Compiled with Webpack (`reactstrap`)                    |        -       |         -         |
 | - Entire bootstrap.min.css file imported in <link> tag                        |      1.3 MB    |        395 KB     |
@@ -62,9 +62,10 @@
 | - Selective foundation imported using SCSS compiled into file                 |      964 KB    |        221 KB     |
 |                                                                               |                |                   |
 | Material UI React App Compiled with Webpack (`material-ui`)                   |        -       |         -         |
-| - Material UI Tabs and Buttons                                                |      2.4 MB    |        261 KB     |
-| - Material UI Tabs and Buttons with custom styles                             |      2.4 MB    |        275 KB     |
-| - Material UI Tabs, Icons, App Bar, and Buttons with custom styles            |      2.4 MB    |        276 KB     |
+| - Material UI Tabs and Buttons                                                |      1.3 MB    |        254 KB     |
+| - Material UI Buttons                                                         |      1.2 MB    |        228 KB     |
+| - Material UI Tabs and Buttons with custom styles                             |      1.3 MB    |        259 KB     |
+| - Material UI Tabs, Icons, App Bar, and Buttons with custom styles            |      1.3 MB    |        270 KB     |
 |                                                                               |                |                   |
 | Material UI React App Compiled with Webpack ('material-web-components-react') |        -       |         -         |
 | - Selected Material UI imported CSS in <link> tag                             |      1.6 MB    |        438 KB     |
@@ -85,4 +86,9 @@
 | Prime-React App Compiled with Webpack (`prime-react`)                         |        -       |         -         |
 | - Material UI and Themes imported CSS in <link> tag                           |      1.0 MB    |        340 KB     |
 | - Material UI and Themes imported CSS using JavaScript                        |      1.4 MB    |        654 KB     |
+|                                                                               |                |                   |
+| React-Toolbox App Compiled with Webpack (`react-toolbox`)                     |        -       |         -         |
+| - Material UI Buttons only                                                    |      940 KB    |        196 KB     |
+| - Material UI Buttons and Tabs                                                |      x.x MB    |        xxx KB     |
+| - Material UI Buttons and Tabs with customizations                            |      x.x MB    |        xxx KB     |
 |                                                                               |                |                   |
