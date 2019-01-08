@@ -39,7 +39,7 @@
 |                                                                               |                |                   |
 | Bootstrap 3 React App Compiled with Webpack (`react-bootstrap`)               |        -       |         -         |
 | - Entire bootstrap.min.css file imported in <link> tag                        |      1.8 MB    |        291 KB     |
-| - Entire bootstrap.min.css file imported using Webpack                        |      2.1 MB    |        549 KB     |
+| - Entire bootstrap.min.css file imported using Webpack                        |      2.0 MB    |        440 KB     |
 | - Selective bootstrap imported using LESS                                     |      1.8 MB    |        241 KB     |
 | - Selective bootstrap imported using LESS compiled into file                  |      1.8 MB    |        232 KB     |
 |                                                                               |                |                   |
