@@ -1,5 +1,14 @@
 ## This is a project to evaluate the merits of different React UI Libraries.
 
+## Conclusion:
+We are going forward with `react-bootstrap@next` because...
+- We want to keep custom styles in CSS/SCSS
+- We want to use our Front-End customizations across React and Non-React projects
+- The project is maintained by users in New York
+- Compiled project size is small
+- It is easy to import only the components we need
+- We can continue to use our BEM style CSS customizations
+
 ### I will be evaluating each library based on:
 - Ease of use
 - Size of compiled package
@@ -43,7 +52,7 @@
 | - Selective bootstrap imported using LESS                                     |      1.8 MB    |        241 KB     |
 | - Selective bootstrap imported using LESS compiled into file                  |      1.8 MB    |        232 KB     |
 |                                                                               |                |                   |
-| Bootstrap 4 React App Compiled with Webpack (`react-bootstrap@next`)          |        -       |         -         |
+| *Winner: Bootstrap 4 React App Compiled with Webpack (`react-bootstrap@next`) |        -       |         -         |
 | - Entire bootstrap.min.css file imported in <link> tag                        |      1.1 MB    |        317 KB     |
 | - Entire bootstrap.min.css file imported using Webpack                        |      1.1 MB    |        323 KB     |
 | - Selective bootstrap imported using SCSS                                     |      1.0 MB    |        208 KB     |
